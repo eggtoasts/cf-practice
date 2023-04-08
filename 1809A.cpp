@@ -26,6 +26,9 @@ int main()
         if (size == 1){
             cout << -1 << endl;
         } else if (size == 2 && (p[value[0]] == 1|| p[value[0]] == 3) ){
+             //so basically, p[value[0]] just returns how many times
+             // the number from value[0]] occurs in the map (string)
+
 
             cout << 6 << endl;
 
@@ -35,10 +38,6 @@ int main()
 
 
         }
-
-        //so basically, p[value[0]] just returns how many times
-        // the number from value[0]] occurs in the map (string)
-
 
 
 
