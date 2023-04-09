@@ -1,6 +1,4 @@
 #include <iostream>
-#include <sstream>
-#include <string>
 #include <map>
 
 using namespace std;
@@ -17,13 +15,17 @@ int main()
     for(int i = 0; i < n; i++){
          cin >> name >> ip;
          ip+= ";";
-         mp[ip]=name;
 
+         //The name of the ip is now put into the map
+         mp[ip]=name;
     }
 
     for (int i = 0; i<m; i++){
          cin >> name >> ip;
-
+         
+         
+        //now you input a new ip, it will now check mp[ip]
+        // and return the name of the corresponding ip
          cout << name << " " << ip << " #" << mp[ip] << endl;
     }
 
@@ -32,7 +34,7 @@ int main()
    }
 
 
-   // other try
+   // other FAILED try bc i always think so complicatedly
 //   int n, m;
 //   cin >> n >> m;
 //   int counter = n+m;
@@ -53,8 +55,6 @@ int main()
 //        }
 //
 //    }
-
-
 
 
 
